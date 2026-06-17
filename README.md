@@ -1,17 +1,9 @@
 # man
 
-A new Flutter project.
+GLB 3D models and orbit controls in Flutter using three_js and three_js_controls packages
 
-## Getting Started
+## Preview
 
-This project is a starting point for a Flutter application.
+https://github.com/user-attachments/assets/b5a442c8-d97a-4d65-91a6-3d0d1f56a363
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
