@@ -342,7 +342,7 @@ packages:
     source: hosted
     version: "0.3.0"
   three_js_controls:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: three_js_controls
       sha256: c2c7beeb8dd4faab8a2a85134f5b9cab0fb6a088dc69e8ec6dd6e0953340ffd1

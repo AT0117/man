@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:three_js/three_js.dart' as three;
+import 'package:three_js_controls/three_js_controls.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +11,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late three.ThreeJS threeJS;
+  late OrbitControls controls;
 
   Future<void> setup3d() async {
     threeJS.scene = three.Scene();
@@ -38,8 +40,10 @@ class _HomePageState extends State<HomePage> {
       print('Object failed to load...');
     }
 
+    controls = OrbitControls(threeJS.camera, threeJS.globalKey);
+
     threeJS.addAnimationEvent((dt) {
-      threeJS.scene.rotation.y += 0.025;
+      controls.update();
     });
   }
 
@@ -65,7 +69,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: SizedBox(width: 300, height: 300, child: threeJS.build()),
+        child: SizedBox(width: 500, height: 500, child: threeJS.build()),
       ),
     );
   }
